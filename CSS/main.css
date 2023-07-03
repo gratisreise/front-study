@@ -8,15 +8,20 @@ margin-right: auto
     text-align: center;
     font-size: 16px;
 }
-p {
-    color : green
+
+.content {
+    text-align: center;
+    
 }
 
-#special{
-    text-align: center
-        color : blue;
-}
-.content {
-    color : red;
-    
+.box {
+    width: 200px;
+    background: cadetblue;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    color: white;
 }
