@@ -103,3 +103,25 @@ p, h4, h3, h2, h1, span{
 .nav-item {
     margin-right: 10px;
 }
+
+.test {
+    font-size: 10
+    width: 10rem;
+    height: 50vh;
+    background: grey;
+}
+@media screen and(max-width: 1200px){
+    .main-title{
+        font-size: 30px;
+    }
+}
+@media screen and(max-width: 768px){
+    .main-title{
+        font-size: 20px;
+    }
+}
+@media print and(max-width: 576px){
+    .main-title{
+        font-size: 10px;
+    }
+}
