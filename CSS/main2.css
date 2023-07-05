@@ -127,3 +127,41 @@ p, h4, h3, h2, h1, span{
 }
 
 
+
+.shop-bg {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.shop-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.shop-item{
+    width: 33%;
+    padding: 10px;
+    display: block;
+}
+.shop-item img{
+    width: 100%;
+}
+
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: all 1s;
+    transition-timing-function: cubic-bezier(0, 1.0);
+}
+.overlay:hover{
+    opacity: 1;
+}
+.overlay:hover{
+    opacity: 1;
+    
+}
