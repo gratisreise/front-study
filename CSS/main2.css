@@ -1,6 +1,14 @@
+@font-face{
+    font-family : '이쁜폰트';
+    src : url(../font/NanumSquareR.woff);
+}
+
+
+
 body{
     margin: 0px;
 }
+
 .main-background {
     
     width: 100%;
@@ -57,4 +65,41 @@ input[type=email]{
     font-size: 20px;
     border: 2px solid black;
     border-radius: 5px;
+}
+
+div, input, textarea{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: 'gulim';
+}
+p, h4, h3, h2, h1, span{
+    transform: rotate(0,03deg);
+}
+
+.flex-item {
+    width: 400px;
+    height: 100px;
+    background-color: grey;
+    margin: 5px;
+}
+
+.flex-container {
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-item {
+    margin-right: 10px;
 }
