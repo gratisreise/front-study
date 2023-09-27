@@ -81,10 +81,37 @@ margin-right: auto;
     background: white;
     border: none;
     border-radius: 5px;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
-    bottom: 100px;
     margin: auto;
     width: 150px;
+    
+}
+
+.explain-box {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+    position: relative;
+    top:-40px;
+    
+}
+
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+input[type=text] {
+    padding: 10px; 
+    font-size:20px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
