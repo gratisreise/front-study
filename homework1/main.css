@@ -1,0 +1,16 @@
+.container{
+    width: 800px;
+}
+.blog-content {
+    width: 80%;
+    height: 200px;
+    background: #eee;
+    float: left
+}
+
+.blog-img {
+    width: 20%;
+    height: 200px;
+    background: yellow;
+    float: left;
+}
