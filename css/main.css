@@ -117,10 +117,38 @@ input[type=text] {
 }
 
 td,th {
-    border: 1px solid black;
+/*    border: 1px solid black;*/
 }
+.cart-table td, .cart-table th{
+    padding: 15px;
+    border-top: 1px solid #c2d3de;
+}
+
 
 table {
     border-collapse: collapse;
     
+}
+
+.cart-background {
+    width:100%;
+    background-color: #c2d3de;
+    padding: 30px;
+}
+
+.cart-table {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    
+}
+.cart-table th:nth-child(3){
+    width: 400px;
+    
+}
+
+.cell-long {
+    width: 400px;
 }
