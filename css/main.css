@@ -65,10 +65,26 @@ margin-right: auto;
     background-position: center;
     filter: brightness(70%);
     padding: 1px;
+    text-align: center;
+    position: relative;
 }
 
 .main-title {
     color: white;
     font-size: 40px;
     margin-top: 200px;
+}
+
+.main-button {
+    padding: 15px;
+    font-size: 20px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    margin: auto;
+    width: 150px;
 }
