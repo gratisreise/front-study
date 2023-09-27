@@ -1,11 +1,13 @@
 .container{
     width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .blog-content {
     width: 80%;
     height: 200px;
     background: #eee;
-    float: left
+    float: left;
 }
 
 .blog-img {
@@ -13,4 +15,24 @@
     height: 200px;
     background: yellow;
     float: left;
+}
+
+.blog-profile {
+    width:50px;
+    display: block;
+    float: left;
+}
+
+.blog-name {
+    float: left;
+}
+
+.navbar li{
+    display: inline-block;
+    
+}
+
+.navbar a{
+    font-size: 16px;
+    text-decoration: none;
 }
