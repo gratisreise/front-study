@@ -115,3 +115,12 @@ input[type=text] {
     border: 1px solid black;
     border-radius: 5px;
 }
+
+td,th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    
+}
