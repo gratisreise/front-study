@@ -7,10 +7,20 @@
 </head>
 <body>
     
-    <div class="alert-box" id="alert">알림창임</div>
-    <button onclick="document.getElementById('alert').style.display='block'">
-        버튼</button>
+    <div class="alert-box" id="alert">
+        알림창임
+        <button onclick="document.getElementById('alert').style.display='none';">닫기</button>
+    </div>
+    <button onclick="작명()">버튼</button>
     
+    <script> 
+        function 작명(){
+            document.getElementById('alert').style.display='block';
+            
+        }
+        
+    
+    </script>
     
 </body>
 </html>
