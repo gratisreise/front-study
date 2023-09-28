@@ -3,18 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     
-    <h1 id="hello">안녕하세요</h1>
-    <h1 id="hi">JS 초보에요</h1>
+    <div class="alert-box" id="alert">알림창임</div>
+    <button onclick="document.getElementById('alert').style.display='block'">
+        버튼</button>
     
-    <script>
-        document.getElementById("hello").innerHTML = '안녕';    
-        document.getElementById('hi').innerHTML='JS 고수에요';
-        
-        
-    </script>
     
 </body>
 </html>
