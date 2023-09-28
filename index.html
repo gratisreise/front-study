@@ -9,21 +9,30 @@
     
     
     <div class="alert-box" id="alert">
-        <p>알림창임</p>
+        <p id='title'>알림창임</p>
         <button onclick="알림창열기('none');">닫기</button>
     </div>
-    <button onclick="알림창열기('block');">버튼1</button>
-    <button onclick="알림창열기('block');">버튼2</button>
+    <button onclick="아이디알림창()">버튼1</button>
+    <button onclick="비번알림창()">버튼2</button>
     
     
     <script> 
         
-        function 알림창열기(구멍){
-            document.getElementById('alert').style.display = 구멍;
+        function 아이디알림창(){
+            document.getElementById('title').innerHTML = '아이디입력하셈';
+            document.getElementById('alert').style.display = 'block';    
         }
         
         
+        function 비번알림창(){
+            document.getElementById('title').innerHTML = '비번입력하셈';
+            document.getElementById('alert').style.display = 'block';
+        }
         
+        
+        function 알림창열기(구멍){
+            document.getElementById('alert').style.display = 구멍;
+        }
         
         
         
