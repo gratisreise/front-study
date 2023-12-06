@@ -8,22 +8,35 @@
 </head>
 <body>
 
-    <div class="alert-box" id="alert">
-        알림창임 
-        <button onclick="알림창닫기()">닫기</button>
+    <div class="alert-box" id="alert1">
+        아이디입력하세요 
+        <button onclick="알림창열기('none', 'alert1');">닫기</button>
     </div>
-    <button onclick="알림창열기()">버튼</button>
+    <div class="alert-box" id="alert2">
+        비밀번호입력하세요
+        <button onclick="알림창열기('none', 'alert2');">닫기</button>
+    </div>
+    <button onclick="알림창열기('block', 'alert1');">버튼1</button>
+    <button onclick="알림창열기('block', 'alert2');">버튼2</button>
 
     <script>
         
-        function 알림창열기(){
-            document.getElementById('alert').style.display = 'block';
+        function 알림창열기(구멍, 구멍2){
+            document.getElementById(구멍2).style.display = 구멍;
+            
         }   
         
-        function 알림창닫기(){
-            document.getElementById('alert').style.display = 'none';
-        }
 
+
+        // function 알림창열기(){
+        //     document.getElementById('alert').style.display = 'block';
+        // }   
+
+        // function 알림창닫기(){
+        //     document.getElementById('alert').style.display = 'none';
+        // }
+
+        
 
     
 
@@ -32,6 +45,7 @@
 </body>
 
 </html>
+
 
 
 
