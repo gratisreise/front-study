@@ -8,23 +8,28 @@
 </head>
 <body>
 
-    <div class="alert-box" id="alert1">
-        아이디입력하세요 
-        <button onclick="알림창열기('none', 'alert1');">닫기</button>
+    <div class="alert-box" id="alert">
+        <p id="title">알림창임</p> 
+        <button id="close">닫기</button>
     </div>
-    <div class="alert-box" id="alert2">
-        비밀번호입력하세요
-        <button onclick="알림창열기('none', 'alert2');">닫기</button>
-    </div>
-    <button onclick="알림창열기('block', 'alert1');">버튼1</button>
-    <button onclick="알림창열기('block', 'alert2');">버튼2</button>
+    <button onclick="정보알림창('아이디')">버튼1</button>
+    <button onclick="정보알림창('비밀번호')">버튼2</button>
 
     <script>
+        document.getElementById('close').addEventListener('mouseover', function(){
+            document.getElementById('alert').style.display = 'none';
+        });
+
+
+        function 알림창열기(구멍){
+            document.getElementById('alert').style.display = 구멍;
+        } 
         
-        function 알림창열기(구멍, 구멍2){
-            document.getElementById(구멍2).style.display = 구멍;
-            
-        }   
+
+        function 정보알림창(구멍){
+            document.getElementById('title').innerHTML = 구멍+' 입력하세요';
+            document.getElementById('alert').style.display = 'block';
+        }
         
 
 
