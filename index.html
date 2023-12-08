@@ -23,9 +23,29 @@
     <div class="black-bg">
       <div class="white-bg">
         <h4>로그인하세요</h4>
-        <button class="btn btn-danger" id="close">닫기</button>
+        <form action="success.html">
+          <div class="my-3">
+            <input type="text" class="form-control">
+           </div>
+           <div class="my-3">
+             <input type="password" class="form-control">
+           </div>
+           <button type="submit" class="btn btn-primary">전송</button>
+           <button type="button" class="btn btn-danger" id="close">닫기</button>
+        </form> 
       </div>
     </div>
+
+    <script>
+      
+
+
+      // 전송버튼 누르면
+      // 저기 input에 입력한 값이 공백이면 알림창띄워주세요~
+
+      
+    </script>
+
     
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
@@ -42,22 +62,18 @@
       <li class="list-group-item">A fourth item</li>
       <li class="list-group-item">And a fifth one</li>
     </ul>
-    <!--버튼을 누르면 모달창 뜨게 구현 ㄱㄱ-->
-    <button id="login" class="log-in-btn">로그인</button>
+    
+    
+    <div class="main-bg">
+      <h4>Shirts on Sale</h4>
+      <button id="login" class="btn btn-danger">로그인</button>
+    </div>
 
     <script>
-      $('#login').on('click',function(){
-        $('.black-bg').addClass('show-modal');
+      $('#login').on('click', function(){
+        $('.black-bg').addClass('show-modal')
       })
       
-
-
-      // $('.log-in-btn').on("click",function(){
-      //   $('.black-bg').fadeIn('show');
-      // })
-      // $('.btn-danger').on('click', function(){
-      //   $('.black-bg').fadeOut('show');
-      // })
       document
         .querySelector(".navbar-toggler")
         .addEventListener("click", function () {
