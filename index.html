@@ -37,15 +37,27 @@
     </div>
 
     <script>
+      function 삼육구게임(a){
+        if(a % 3 == 0){
+          console.log('안녕');
+        } else { 
+          console.log('통과');
+        }
+      }
+      function 합격했냐(b, c){
+        if(b < 40 || c < 40){
+          console.log('불합격')
+        } else if(b + c >= 120){
+            console.log('합격')
+        } else {
+            console.log('불합격')
+        }
+      }
+
 
       if(1 == 1 || 2 == 2){
         console.log('안녕')
       }
-      
-
-
-
-
       // document.getElementById('email').addEventListener('input', function(){
       //   console.log('안녕')
       // })
