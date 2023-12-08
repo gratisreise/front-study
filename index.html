@@ -25,23 +25,43 @@
         <h4>로그인하세요</h4>
         <form action="success.html">
           <div class="my-3">
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" id="email">
            </div>
            <div class="my-3">
-             <input type="password" class="form-control">
+             <input type="password" class="form-control" id="pw">
            </div>
-           <button type="submit" class="btn btn-primary">전송</button>
+           <button type="submit" class="btn btn-primary" id="send">전송</button>
            <button type="button" class="btn btn-danger" id="close">닫기</button>
         </form> 
       </div>
     </div>
 
     <script>
+
+      if(1 == 3){
+        console.log('맞아요1');
+      } else if(3 == 3){
+        console.log('맞아요1');
+      } 
       
 
 
       // 전송버튼 누르면
       // 저기 input에 입력한 값이 공백이면 알림창띄워주세요~
+      $('form').on('submit', function(e){
+          if(document.getElementById('email').value == ''){
+            alert('아이디와 입력해주세요');
+          }
+          if(document.getElementById('pw').value == ''){
+            alert('비밀번호를 입력해주세요');
+          }
+          if(document.getElementById('pw').value.length < 6){
+            alert('비밀번호가 너무 짧다')
+          }
+      });
+
+
+      
 
       
     </script>
