@@ -43,16 +43,21 @@
       <li class="list-group-item">And a fifth one</li>
     </ul>
     <!--버튼을 누르면 모달창 뜨게 구현 ㄱㄱ-->
-    <button class="log-in-btn">로그인</button>
-    
+    <button id="login" class="log-in-btn">로그인</button>
 
     <script>
-      $('.log-in-btn').on("click",function(){
-        $('.black-bg').addClass('show');
+      $('#login').on('click',function(){
+        $('.black-bg').addClass('show-modal');
       })
-      $('.btn-danger').on('click', function(){
-        $('.black-bg').toggleClass('show');
-      })
+      
+
+
+      // $('.log-in-btn').on("click",function(){
+      //   $('.black-bg').fadeIn('show');
+      // })
+      // $('.btn-danger').on('click', function(){
+      //   $('.black-bg').fadeOut('show');
+      // })
       document
         .querySelector(".navbar-toggler")
         .addEventListener("click", function () {
