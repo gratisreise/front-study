@@ -37,27 +37,8 @@
     </div>
 
     <script>
-      function 삼육구게임(a){
-        if(a % 3 == 0){
-          console.log('안녕');
-        } else { 
-          console.log('통과');
-        }
-      }
-      function 합격했냐(b, c){
-        if(b < 40 || c < 40){
-          console.log('불합격')
-        } else if(b + c >= 120){
-            console.log('합격')
-        } else {
-            console.log('불합격')
-        }
-      }
-
-
-      if(1 == 1 || 2 == 2){
-        console.log('안녕')
-      }
+      
+      
       // document.getElementById('email').addEventListener('input', function(){
       //   console.log('안녕')
       // })
@@ -94,12 +75,33 @@
     
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
-        <span class="navbar-brand">Navbar</span>
+        <span class="navbar-brand">JSShop</span>
+        <span class="badge bg-dark">Dark 🔄</span>
         <button class="navbar-toggler" type="button">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
     </nav>
+
+    <script>
+
+      var count = 0;
+      
+      $('.badge').on('click', function(){
+        count++;
+        if(count % 2 == 0){
+          $('.badge').html('Dark 🔄');
+        } else{
+          $('.badge').html('Light 🔄');
+        }
+
+      })
+
+      // badge 클릭횟수가 홀수면 내부 글자를 light로 변경
+      // badge 클릭횟수가 짝수면 내부 글자를 Dark로 변경
+
+    </script>
+
     <ul class="list-group" id="test1">
       <li class="list-group-item">An item</li>
       <li class="list-group-item">A second item</li>
