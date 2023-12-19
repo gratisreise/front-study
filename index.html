@@ -37,18 +37,28 @@
     </div>
 
     <script>
+      $('form').on('submit', function(){
+        var 입력한값 = document.getElementById('email').value
+        if(입력한값 == ' '){
+          alert('아이디입력안함');
+        }
+        if(/\S+@\S+.\S+/.test(입력한값)){
+          alert('이메일형식아님')
+        }
+      });
+
       // document.getElementById('email').addEventListener('input', function(){
       //   console.log('안녕')
       // })
 
-      if (1 == 3) {
-        console.log("맞아요1");
-      } else if (3 == 3) {
-        console.log("맞아요1");
-      }
+      // if (1 == 3) {
+      //   console.log("맞아요1");
+      // } else if (3 == 3) {
+      //   console.log("맞아요1");
+      // }
 
       // 전송버튼 누르면
-      // 저기 input에 입력한 값이 공백이면 알림창띄워주세요~
+      //저기 input에 입력한 값이 공백이면 알림창띄워주세요~
       $("form").on("submit", function (e) {
         if (document.getElementById("email").value == "") {
           alert("아이디와 입력해주세요");
@@ -73,39 +83,6 @@
     </nav>
 
     <script>
-      let age = 20;
-      const place = "서울";
-
-      var name = "park";
-      var id = 0;
-
-      function showName() {
-        var name = "kim";
-        var id = 1;
-        console.log(name);
-      }
-
-      showName();
-      console.log(id);
-
-      var 예금액 = 60000;
-      var 미래예금액 = 0;
-
-      if (예금액 >= 50000) {
-        미래예금액 = 예금액 * 1.2 * 1.2;
-      } else {
-        미래예금액 = 예금액 * 1.15 * 1.15;
-      }
-
-      console.log(미래예금액);
-
-      var first = 360;
-      var result = 0;
-      result = first + first * (2 / 3) + first * (2 / 3) * (2 / 3);
-      console.log(result);
-
-      var count = 0;
-
       $(".badge").on("click", function () {
         count++;
         if (count % 2 == 0) {
@@ -132,24 +109,25 @@
       <button id="login" class="btn btn-danger">로그인</button>
     </div>
 
-    <p>태조 이성계가 태어난 년도는?</p>
-    <input type="text" id="answer" />
-    <button id="send-answer">제출</button>
+    <div class="alert alert-danger">
+      <span id = "num">5</span>초 이내 구매시 사은품 증정!
+    </div>
 
     <script>
-      var count = 0;
 
-      document
-        .querySelector("#send-answer")
-        .addEventListener("click", function () {
-          count += 1;
-          var 유저답안 = document.querySelector("#answer").value;
-          if (유저답안 == "1335") {
-            alert("성공");
-          } else if (count >= 3 && 유저답안 != "1335") {
-            alert("멍청아");
-          }
-        });
+      var count = 5;
+      
+
+      setInterval(function(){
+        count -= 1;
+        if(count > 0){
+          document.querySelector("#num").innerHTML = count;
+        } else {
+          $('.alert').hide();
+        }
+      }, 1000);
+
+
     </script>
 
     <script>
