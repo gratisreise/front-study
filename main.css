@@ -43,3 +43,15 @@
     background: black;
     color: white;
 }
+.slide-container{
+    width: 300vw;
+    transition: all 1s;
+    transform: translateX(-100vw);
+}
+.slide-box{
+    width: 100vw;
+    float: left;
+}
+.slide-box img{
+    width: 100%;
+}
