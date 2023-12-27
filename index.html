@@ -182,6 +182,29 @@
       $('.slide-container').css('transform', 'translateX(-200vw)');
     })
    </script>
+
+   <script>
+    console.log(vat(55555));
+
+    function vat(a){
+      var num = (a * 1.1).toFixed(2);
+      return num + 1;
+    }
+    //숙제
+    function 함수(a, b){
+      return (a * 60 + b) * 1000;
+    }
+    console.log(함수(2, 10));
+    function 함수1(a, b){
+      var result = a * 90/100;
+      if(b){ 
+        result -= 1.5;
+      }
+      return result;
+    }
+    console.log(함수1(70, false))
+    console.log(함수1(10, true))
+   </script>
     
 
     <script
